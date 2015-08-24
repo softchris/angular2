@@ -1,0 +1,11 @@
+<p>
+	<input #newTodo type="text" placeholder="new todo" />
+	<button (click)="addTodo(newTodo.value)">add</button>
+</p>
+<ul>
+     <li *ng-for="#todo of todos">
+        {{ todo }}
+
+     </li>
+</ul>
+

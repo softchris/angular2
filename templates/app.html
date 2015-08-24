@@ -1,0 +1,13 @@
+<p>Boss: {{ name }}</p>
+
+  <p>Avengers:</p>
+  <p *ng-if="avengers.length === 3">One avenger is missing</p>
+  <ul>
+     <li *ng-for="#name of avengers">
+        {{ name }}
+
+     </li>
+ </ul>
+
+ <todo-list></todo-list>
+
